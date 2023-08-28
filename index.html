@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./CSS/style.css">
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
+</head>
+<body>
+    <header class="header">
+    <nav class="nav">
+        <a href="#" class="nav_logo">LIVE VERTUAL CLASS</a>
+        <ul class="nav_items">
+            <li class="nav_item">
+                <a href="#HOME" class="nav_link">HOME</a>
+                <a href="./courses.html" class="nav_link">COURSES</a>
+                <a href="./G.html" class="nav_link">GALLERY</a>
+                
+                <a href="#Contactus" class="nav_link">CONTACTUS</a>
+                <a href="#Results" class="nav_link">RESULTS</a>
+                <!-- <a href="#" class="nav_link">SUBSCRIPTION</a> -->
+                <a href="#"  class="nav_link" onclick="myfunc2()">SUBSCRIBE</a>
+
+
+
+
+            </li>
+        </ul>
+        <button class="button" id="form-open">Login</button>
+    </nav>
+</header>
+<section style=" background-image: url(./Images/background.jpeg);"class="home" id="HOME">
+<div class ="form_container">
+    <i class="uil uil-times form_close"></i>
+    <div class="form login_form">
+        <form action="#">
+        <h2>Login</h2>
+        <div class="input_box">
+            <input type="email" placeholder="Enter your Email" required/>
+            <i class="uil uil-envelope-alt email"></i>
+            
+
+        </div>
+        <div class="input_box">
+            <input type="password" placeholder="Enter your Pmail" required/>
+            <i class="uil uil-lock password"></i>
+            <i class="uil uil-eye-slash pw_hide"></i>
+            
+
+        </div>
+        <div class="option_field">
+            <span class="checkbox">
+                <input type="checkbox" id="check">
+                <label for="check">Remeber me</label>
+            </span>
+            <a href="#" class="forgot_pw">Forgot Password?</a>
+        </div>
+        <button class="button">Login Now</button>
+        <div class="login_signup">
+            Don't have an account?<a href="#" id="signup">Signup</a>
+        </div>
+    </form>
+        
+    </div>
+    <!-- Signup form -->
+    <div class="form signup_form">
+        <form action="#">
+        <h2>Signup</h2>
+        <div class="input_box">
+            <input type="email" placeholder="Enter your Email" required/>
+            <i class="uil uil-envelope-alt email"></i>
+            
+
+        </div>
+        <div class="input_box">
+            <input type="password" placeholder="Create password" required/>
+            <i class="uil uil-lock password"></i>
+            <i class="uil uil-eye-slash pw_hide"></i>
+            
+
+        </div>
+        <div class="input_box">
+            <input type="password" placeholder="Confirm Password" required/>
+            <i class="uil uil-lock password"></i>
+            <i class="uil uil-eye-slash pw_hide"></i>
+            
+
+        </div>
+        <div class="option_field">
+            <span class="checkbox">
+                <input type="checkbox" id="check">
+                <label for="check">Remeber me</label>
+            </span>
+            <a href="#" class="forgot_pw">Forgot Password?</a>
+        </div>
+        <button class="button">Signup Now</button>
+        <div class="login_signup">
+            Already have an account?<a href="#" id="login">Login</a>
+        </div>
+    </form>
+        
+    </div>
+</div>
+</section>
+<section class = "Gallery2" id="GALLERY" style="background-color: #434343;">
+    <div class="gallery">
+        <div class="pic a">
+            <img src="./Images/img1.jpg">
+        </div>
+        <div class="pic b">
+            <img src="./Images/img1.jpg">
+        </div>
+        <div class="pic c">
+            <img src="./Images/img1.jpg">
+        </div>
+        <div class="pic d">
+            <img src="./Images/img1.jpg">
+        </div>
+        <div class="pic e">
+            <img src="./Images/img1.jpg">
+        </div>
+        <div class="pic f">
+            <img src="./Images/img1.jpg">
+        </div>
+    </div>
+    <!-- <h2 class="all-heading">GALLERY<span>Section</span></h2> -->
+</section>
+<section style = "background-image: url(./Images/background.jpeg);; min-height: 60vh;padding: 4rem 9% 2rem;"class = "courses" id="Courses">
+    <div class="content">
+        <h2 style ="color: #e35509;">Popular Courses</h2>
+        <div class="search">
+          <select  name="select course" id="search" onchange="func4()">
+            <option id="dropdown" disabled selected>select courses</option>
+            <option value="mean">MEAN</option>
+            <option value="mern">MERN</option>
+            <option value="mevn">MEVN</option>
+          </select>
+        </div>
+    <div id="courses">
+        <a href="#"><img src="./Images/mean.jpg" alt="Mean Stack" style="height: 200px;width: 200px;"></a> 
+        <p id="display1" >It is a full-stack development toolkit that uses JavaScript frameworks for front-end, back-end tools, and library.</p>
+         <a href="#"><img src="./Images/mern.jpg" alt="Mern Stack" style="height: 200px;width: 200px;"></a>
+         <p style="display: none;">The MERN Stack is a collection of four technologies used for faster application development, namely MongoDB, Express, React, and Node.js. It combines the most recent technologies for building high-end web apps, 
+         making the development process smoother and easier.</p>
+        <a href="#"> <img src="./Images/mevn.jpg" alt="Mevn Stack" style="height: 200px;width: 200px;"></a>
+        <p style="display: none;">MEVN is again a web stack just like MERN and MEAN though it is
+         relatively new as the front-end technology used in it which is Vue.JS.</p>
+ 
+     </div>
+    </div>
+    </section>
+<section style="background-image: url(./Images/background.jpeg);; min-height: 60vh;padding: 4rem 9% 2rem;"class="contact" id="Contactus">
+    <div class="contact" id="contact">
+   
+        <form onsubmit="return myfunc()"  id="contact_form" method="get" action="thanks.html">
+       <div class="form-group">
+        <div class="form-group">
+          <label for="exampleInputPassword1">Name</label>
+          <input  type="text" class="form-control" id="txt1">
+        </div><br>
+        <label for="exampleInputEmail1">Email</label>
+        <input type="email" class="form-control" id="email" aria-describedby="emailHelp">
+      </div><br>
+      <div class="form-group">
+        <label for="exampleInputPassword1">Designation</label>
+        <input type="text" class="form-control" id="designation" >
+      </div><br>
+      <button  style ="color: #fff; background-color: rgb(83, 9, 232);height: 100%; width: 100%;"type="submit" class="btn btn-primary">Submit</button>
+        </form>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3886.865488996775!2d77.61645620000002!3d13.0442328!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae1770e1959907%3A0x368dea11d919b8a8!2sEpsilon!5e0!3m2!1sen!2sin!4v1692715207753!5m2!1sen!2sin" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+</section>
+
+
+
+
+<section class = "result" id="Results" style="min-height: 60vh; padding: 4rem 9% 2rem; background-color: rgb(113, 99, 140)">
+    <div class="con">
+        <form id="form1" method="get" name="form1"  action="#">
+            <label >Name:</label>
+            <input class="form-control" type="text" name="name">
+            <br><br>
+            <label for="">Marks</label><br><br>
+            Maths: <input class="form-control" type="text" id="math">
+            Science: <input class="form-control"  type="text" id="science" id="">
+            Computer: <input class="form-control"  type="text" id="computer"><br><br>
+            <label for="">Result</label><br>  
+            Total Marks: <input type="text" id="total">
+            % Marks: <input type="text" id="percent">
+            Max Marks: <input type="text" id="max">
+            <br>
+            <br>
+            
+        </form>
+        <center> <button type="submit" onclick="myfunc1()">Result</button></center>
+        
+      </div>
+
+</section>
+
+<script src="./JS/script.js"></script>
+<script src="./JS/gallery.js"></script>
+</body>
+</html>

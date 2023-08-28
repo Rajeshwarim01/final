@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./CSS/style.css">
+</head>
+<body>
+    <section style = "background-image: url(./Images/background.jpeg);background-size: cover; background-repeat: no-repeat;"class = "courses" id="Courses">
+        <div class="content">
+            <div>
+            <h2 style="color: rgb(237, 98, 5);">Popular Courses</h2>
+        </div>
+            <div class="search">
+              <select  name="select course" id="search" onchange="func4()">
+                <option id="dropdown" disabled selected>select courses</option>
+                <option value="mean">MEAN</option>
+                <option value="mern">MERN</option>
+                <option value="mevn">MEVN</option>
+              </select>
+            </div>
+        <div id="courses">
+            <a href="#"><img src="./Images/mean.jpg" alt="Mean Stack" style="height: 200px;width: 200px;"></a> 
+            <p id="display1" >It is a full-stack development toolkit that uses JavaScript frameworks for front-end, back-end tools, and library.</p>
+             <a href="#"><img src="./Images/mern.jpg" alt="Mern Stack" style="height: 200px;width: 200px;"></a>
+             <p style="display: none;">The MERN Stack is a collection of four technologies used for faster application development, namely MongoDB, Express, React, and Node.js. It combines the most recent technologies for building high-end web apps, 
+             making the development process smoother and easier.</p>
+            <a href="#"> <img src="./Images/mevn.jpg" alt="Mevn Stack" style="height: 200px;width: 200px;"></a>
+            <p style="display: none;">MEVN is again a web stack just like MERN and MEAN though it is
+             relatively new as the front-end technology used in it which is Vue.JS.</p>
+     
+         </div>
+        </div>
+        </section>
+</body>
+</html>
